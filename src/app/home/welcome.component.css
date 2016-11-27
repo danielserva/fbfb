@@ -29,21 +29,16 @@
   min-height: 96px;
   margin-top: 72px;
   padding-top: 16px;
-  padding-left: 128px;
   position: absolute;
-
-
 }
 
 .footer-texto {
   margin-right: auto;
   float: left;
-  width: 256px;
 
 }
 
 .footer-links {
-  margin-left: 512px;
 }
 
 .doar
@@ -110,14 +105,19 @@ a, a:visited {
   color: #000;
 }
 
-a:focus, a:hover {
-  background-color: transparent;
-  color: #000;
-}
-
 .btn:visited {
   color: #fff;
 
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #025aa5;
+    border-color: #01549b;
 }
 
 #error_explanation {

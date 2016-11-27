@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
+ import { CarouselModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent }  from './home/welcome.component';
+import { CarouselComponent } from './carousel/carousel.component';
 import { ComoComponent }  from './como/como.component';
 import { DoadoresComponent }  from './doadores/doadores.component';
 import { EntidadesComponent }  from './entidades/entidades.component';
@@ -18,6 +19,7 @@ import { PorqueComponent }  from './porque/porque.component';
   declarations: [
     AppComponent,
   WelcomeComponent,
+  CarouselComponent,
   ComoComponent,
   DoadoresComponent,
   EntidadesComponent,
@@ -25,7 +27,7 @@ import { PorqueComponent }  from './porque/porque.component';
   PorqueComponent
   ],
   imports: [
-    AlertModule,
+    CarouselModule,
     BrowserModule,
     FormsModule,
     HttpModule,

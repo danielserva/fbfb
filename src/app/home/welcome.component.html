@@ -1,62 +1,29 @@
-﻿<!--<% if ! @projetos.empty? %>-->
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3500">
-  <ol class="carousel-indicators">
-    <!--<% @projetos.each do |projeto| %>
-      <% @n = @n ? @n + 1 : 0 %>
-      <% if @n == 0 %>-->
-        <!--<li data-target="#carousel-example-generic" data-slide-to="<%= @n %>" class="active"></li>-->
-      <!--<% else %>-->
-        <li data-target="#carousel-example-generic" data-slide-to="<%= @n %>"></li>
-      <!--<% end %>
-    <% end %>-->
-  </ol>
-
-  <div class="carousel-inner" role="listbox">
-    <!--<% @n = 0 %>
-    <% @projetos.each do |projeto| %>
-      <% if @n == 0 %>-->
-        <!--<div class="carousel-item active">
-      <% else %>-->
-        <div class="carousel-item">
-      <!--<% end %>
-        <%= image_tag projeto.imagem.url(:medium), size: "800x400", alt: projeto.nome %>-->
-        <div class="carousel-caption">
-          <a href="projeto_url(projeto)">
-            <h3>projeto.nome</h3>
-            <p>projeto.descricao</p>
-          </a>
+﻿<fbfb-carousel></fbfb-carousel>
+<div class="row">
+<footer class="footer">
+  
+    <div class="container">
+      <div class="col-md-1"></div>
+      <div class="col-md-3" >    
+        <div class="footer-texto">
+          <b>Alguma Dúvida?</b>
+          <h2>Fale Conosco:</h2>
         </div>
       </div>
-      <!--<% @n = @n ? @n + 1 : 0 %>
-    <% end %>-->
-  </div>
-</div>
-<div class="box">
-<div class="box-tipo">
-  <div class="tab-content">
-    <div class="tab-pane active"><br/>
-      <table class="table">
-        <tbody>
-          <!--<% @tipos.each_slice(2) do |p| %>-->
-          <tr>
-            <!--<% p.each do |tipo| %>-->
-              <td class="list">
-                <!--<%= link_to image_tag(tipo.imagem.url(:medium), :width => "64"), tipo_entidades_path(tipo) %>-->
-                <br/><br/>
-                <!--<b><%= link_to tipo.nome, tipo_entidades_path(tipo) %></b>-->
-                <br/>
-                <!--<%= link_to truncate(tipo.descricao, :length => 32), tipo_path(tipo) %>-->
-              </td>
-            <!--<% end %>-->
-          </tr>
-          <!--<% end %>-->
-        </tbody>
-      </table>
+      <div class="col-md-1"> </div>
+      <div class="col-md-1">
+        <div class="footer-links ">
+            <a class="btn btn-primary"  href="mailto:equipe@fazbemfazerobem.org">
+              <i class="fa fa-envelope"></i> E-Mail</a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="footer-links ">
+            <a class="btn btn-warning"  href="#">
+              <i class="fa fa-phone"></i>Telefone</a>
+        </div>
+      </div>
+      <div class="col-md-5"></div>
     </div>
+  </footer>
   </div>
-</div>
-<div class="box-mapa">
-  <!--<%= map(:center  => { :latlng => [-15.77835833463309, -47.88219451904297], :zoom => 5}) %>-->
-</div>
-</div>
-<!--<% end %>-->
