@@ -6,7 +6,6 @@
 .carousel-inner{
   margin-left: auto;
   margin-right: auto;
-  width: 1024px;
   max-height: 355px !important;
 }
 
@@ -18,6 +17,7 @@
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
   max-height: 355px !important;
+  margin: 0 auto; /* Align slide image horizontally center */
 }
 
 .carousel-caption p {

@@ -3,11 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
- import { CarouselModule } from 'ng2-bootstrap/ng2-bootstrap';
+import { CarouselModule } from 'ng2-bootstrap/ng2-bootstrap';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent }  from './home/welcome.component';
-import { CarouselComponent } from './carousel/carousel.component';
+import { FBCarouselComponent } from './fbfb-carousel/fbfb-carousel.component';
 import { ComoComponent }  from './como/como.component';
 import { DoadoresComponent }  from './doadores/doadores.component';
 import { EntidadesComponent }  from './entidades/entidades.component';
@@ -19,7 +20,7 @@ import { PorqueComponent }  from './porque/porque.component';
   declarations: [
     AppComponent,
   WelcomeComponent,
-  CarouselComponent,
+  FBCarouselComponent,
   ComoComponent,
   DoadoresComponent,
   EntidadesComponent,
@@ -27,6 +28,7 @@ import { PorqueComponent }  from './porque/porque.component';
   PorqueComponent
   ],
   imports: [
+    NgbModule.forRoot(),
     CarouselModule,
     BrowserModule,
     FormsModule,
