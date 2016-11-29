@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
 })
 export class WelcomeComponent {
     public pageTitle: string = 'Welcome';
+    lat: number = -11.6870881;
+    lng: number = -48.4975477;
 }

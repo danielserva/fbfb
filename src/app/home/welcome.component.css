@@ -253,3 +253,7 @@ p {
   width: 600px;
   height: 300px;
 }
+
+.sebm-google-map-container {
+  height: 300px;
+}

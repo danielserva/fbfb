@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { CarouselModule } from 'ng2-bootstrap/ng2-bootstrap';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { AgmCoreModule } from 'angular2-google-maps/core';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent }  from './home/welcome.component';
@@ -33,6 +34,9 @@ import { PorqueComponent }  from './porque/porque.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDw6HCie09eiqt8JKRMMP3K4MxpqP2fvgs'
+    }),
     RouterModule.forRoot([
       {path: 'como', component: ComoComponent},
       {path: 'doadores', component: DoadoresComponent},
