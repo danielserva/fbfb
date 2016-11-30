@@ -62,21 +62,17 @@
     border-bottom: 1.5px solid #CFD3DA !important;
 }
 
-.navbar-meio {
+.navbar-fbfb {
     background-color: #DAE8FC !important;
-    min-height: 52px;
+    background-image: none !important;
 }
 
-.navbar-meio .nav-item {
-  width: 150px;
-  margin: 12px 64px 0px 16px;
+.navbar-fbfb .item {
   border-bottom: 2px solid #CBDCF3;
 }
 
-.navbar-meio .nav-item a {
+.navbar-fbfb .item a {
   color: #7e7f82 !important;
-  text-align: left;
-  margin-top: 10px;
   font-weight: bold;
 }
 
