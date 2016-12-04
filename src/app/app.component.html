@@ -38,11 +38,13 @@
             </button>
           </li>
           <li class="dropdown" *ngIf="auth.authenticated()">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">-->
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img [src]="auth.userProfile.picture" class="profile-image img-circle"></a>
             <ul class="dropdown-menu">
               <li><a [routerLink]="['/welcome']">Settings</a></li>
               <li role="separator" class="divider"></li>
-              <li><a (click)="auth.logout()">Log out</a></li>
+              <li><a (click)="auth.logout()"> <img src="" alt=""> Log out</a></li>
             </ul>
           </li>
         </ul>
