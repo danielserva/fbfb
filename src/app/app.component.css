@@ -14,7 +14,7 @@
  *= require_self
  */
 
-.alerta {
+/*.alerta {
   font-weight: bold;
   background-color: #f2dede;
   border-color: #ebcccc;
@@ -81,7 +81,7 @@ body {
 }
 
 .starter-template {
-  /* padding: 3rem 1.5rem; */
+   padding: 3rem 1.5rem; 
   text-align: center;
 }
 
@@ -248,4 +248,4 @@ p {
   margin-right: auto;
   width: 600px;
   height: 300px;
-}
+}*/

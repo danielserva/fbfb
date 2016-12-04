@@ -1,0 +1,5 @@
+<form class="new_user" [ngFormModel]="loginForm" (ngSubmit)="doLogin($event)" accept-charset="UTF-8">
+    <input formControlName="email" type="email" placeholder="Your email">
+    <input formContControl="password" type="password" placeholder="Your password">
+<button type="submit">Log in</button>
+</form>

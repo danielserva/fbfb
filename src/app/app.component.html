@@ -18,19 +18,7 @@
           <li class="item"><a [routerLink]="['/entidades']">Intituições</a></li>
           <li class="item"><a [routerLink]="['/doadores']">Doadores</a></li>
           <li class="item"><a [routerLink]="['/parceiros']">Parceiros</a></li>
-          
-          <!--<li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>-->
+          <li class="item"><a [routerLink]="['/welcome']">Quem somos?</a></li>
         </ul>
         <form class="navbar-form navbar-left">
           <div class="form-group">
@@ -39,26 +27,41 @@
           <button type="submit" class="btn btn-default">Buscar</button>
         </form>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Quem somos?</a></li>
-          <li><a href="https://www.facebook.com/fazbemfazerobemoficial"> <img src="assets/images/fb.png" alt="" width="16" height="16"> </a>
+          <li class="item"><a href="https://www.facebook.com/fazbemfazerobemoficial"> <img src="assets/images/fb.png" alt="" width="16" height="16"> </a>
           </li>   
-          <li>
+          <li class="item">
             <a href="https://twitter.com/fazerobem_tw"> <img src="assets/images/twitter.png" alt="" width="16" height="16"> </a>
+          </li>
+          <li class="item">
+            <button (click)="auth.login()" class="btn btn-default btn-sm" *ngIf="!auth.authenticated()">
+                <i class="glyphicon glyphicon-log-in"></i> Log In 
+            </button>
+          </li>
+          <li class="dropdown" *ngIf="auth.authenticated()">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a [routerLink]="['/welcome']">Settings</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a (click)="auth.logout()">Log out</a></li>
+            </ul>
           </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 </div>
-<div class="alerta" role="alert">
+<div class="alert alert-danger">
     Este é apenas um Protótipo em Desenvolvimento. Gostaria de nos ajudar? Entre em contato pelo E-Mail: <a href="mailto:equipe@fazbemfazerobem.org">equipe@fazbemfazerobem.org</a>
 </div>
-<div class="main-info">
+<!--<div class="main-info">
   <div class="main-logo">
     <a href="https://fazbemfazerobem.org/"><img src="assets/images/logo2.png" alt="Logo" /></a>
   </div>
 
   <div class="main-login">
+
+      <login-form></login-form>
+
       <form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post">
         <div class="main-user">
           <label style="font-size: 11px; font-weight: bold; color: #93CEFE;" for="user_Usuário">Usuário</label>
@@ -83,8 +86,9 @@
           <input type="submit" name="commit" value="Doar" class="btn btn-warning doar" data-disable-with="Doar" />
         </div>
       </form>      
+      
   </div>
-</div>
+</div>-->
 
 <div class='container'>
     <router-outlet></router-outlet>
