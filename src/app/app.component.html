@@ -37,7 +37,7 @@
                 <i class="glyphicon glyphicon-log-in"></i> Log In 
             </button>
           </li>
-          <li class="dropdown" *ngIf="auth.authenticated()">
+          <li class="dropdown" *ngIf="auth.authenticated() && auth.userProfile">
             <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">-->
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img [src]="auth.userProfile.picture" class="profile-image img-circle"></a>
