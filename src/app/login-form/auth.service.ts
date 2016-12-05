@@ -9,7 +9,7 @@ declare var Auth0: any;
 export class Auth {
   // Configure Auth0
   lock = new Auth0Lock('sGZlFlJ9MXE3ZbOpOC3UlwTDcfZEpuB3', 'danielserva.eu.auth0.com', {
-   auth: { redirectUrl: 'http://localhost:4200/',
+   auth: { redirectUrl: 'https://danielserva.github.io/fbfb/',
     responseType: 'token'
    }
   });
