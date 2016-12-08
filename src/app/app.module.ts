@@ -17,6 +17,8 @@ import { DoadoresComponent }  from './doadores/doadores.component';
 import { EntidadesComponent }  from './entidades/entidades.component';
 import { ParceirosComponent }  from './parceiros/parceiros.component';
 import { PorqueComponent }  from './porque/porque.component';
+import { TeamComponent }  from './team/team.component';
+
 // import { ProductModule } from './products/product.module';
 
 @NgModule({
@@ -28,7 +30,8 @@ import { PorqueComponent }  from './porque/porque.component';
   DoadoresComponent,
   EntidadesComponent,
   ParceirosComponent,
-  PorqueComponent
+  PorqueComponent,
+  TeamComponent
   ],
   imports: [
     NgbModule.forRoot(),
@@ -46,7 +49,7 @@ import { PorqueComponent }  from './porque/porque.component';
       {path: 'entidades', component: EntidadesComponent},
       {path: 'parceiros', component: ParceirosComponent},
       {path: 'porque', component: PorqueComponent},
-      {path: 'sobre', component: WelcomeComponent},
+      {path: 'team', component: TeamComponent},
       {path: 'welcome', component: WelcomeComponent},
 
       {path: '', redirectTo: 'welcome', pathMatch: 'full'},
